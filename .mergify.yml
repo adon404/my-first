@@ -1,2 +1,19 @@
 queue_rules:
   - name: two
+pull_request_rules:
+  - name: New rule
+    conditions:
+      - base = main
+    actions: {}
+  - name: New rule
+    conditions:
+      - base = main
+    actions: {}
+  - name: New rule
+    conditions:
+      - base = main
+    actions: {}
+  - name: New rule
+    conditions:
+      - base = main
+    actions: {}
