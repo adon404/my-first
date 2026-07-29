@@ -1,2 +1,9 @@
 queue_rules:
   - name: two
+priority_rules:
+  - name: helli
+    priority: high
+    conditions:
+      - and:
+          - base = main
+    allow_checks_interruption: false
