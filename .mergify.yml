@@ -1,2 +1,10 @@
 queue_rules:
   - name: two
+merge_protections:
+  - name: Merge during working hours
+    description: Make sure to merge only during working hours
+    if:
+      - base = main
+      - "#base <= 1"
+    success_conditions:
+      - schedule = Mon-Fri 09:00-17:00[America/Chicago]
